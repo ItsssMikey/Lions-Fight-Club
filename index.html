@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lions Fight Gym — Bokseklubb</title>
+  <meta name="description" content="Lions Fight Gym — timer, trenere, timeplan, og medlemskap. Meld deg inn og boks idag." />
+  <meta name="theme-color" content="#0b0f14" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header" data-elevate>
+    <div class="container header-wrap">
+      <a class="logo" href="#">
+        <span class="logo-text">Lions Fight Gym</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#about">Om</a>
+        <a href="#classes">Timer</a>
+        <a href="#coaches">Trenere</a>
+        <a href="#schedule">Timeplan</a>
+        <a href="#memberships">Medlemskap</a>
+        <a href="#contact" class="btn btn--sm btn--primary">Bli med</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="hero" aria-label="Highlights">
+    <div class="slider" role="region" aria-roledescription="carousel" aria-label="Club highlights" aria-live="polite">
+      <div class="slides">
+
+        <!-- Slide 1 -->
+        <article class="slide is-active" data-index="0">
+          <picture>
+            <!-- Replace with your own images in /assets -->
+            <img src="https://images.unsplash.com/photo-1521805103424-d8f8430e8933?q=80&w=1600&auto=format&fit=crop" alt="Boxer training with heavy bag in a dark gym" />
+          </picture>
+          <div class="slide-overlay">
+            <h1 class="headline">Train Like a Champion</h1>
+            <p class="subhead">Teknisk boksing, kondisjon, null ego. nybegynner til avansert — alle er velkomne.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="#memberships">Se medlemskap</a>
+              <a class="btn btn--ghost" href="#classes">Utforsk timer</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="slide" data-index="1">
+          <img src="./media/photo-1708805931233-26845b3aa7c7.jpg" alt="Group boxing class practicing footwork" />
+          <div class="slide-overlay">
+            <h2 class="headline">Fotarbeid • fart • kraft</h2>
+            <p class="subhead">Strukturerte timer ledet av erfarne trenere.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="#schedule">Se timeplan</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="slide" data-index="2">
+          <img src="./media/vintage-boxing-corner-and-hung-up-gloves-allan-swart.jpg" alt="Boxing gloves on the ring corner" />
+          <div class="slide-overlay">
+            <h2 class="headline">Bli med i samholdet</h2>
+            <p class="subhead"> Støttende miljø, seriøs trening og resultater.</p>
+            <div class="actions">
+              <a class="btn btn--primary" href="#contact">Ta en prøvetime</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Controls -->
+      <button class="ctrl ctrl--prev" aria-label="Previous slide" data-prev>&larr;</button>
+      <button class="ctrl ctrl--next" aria-label="Next slide" data-next>&rarr;</button>
+
+      <!-- Dots -->
+      <div class="dots" role="tablist" aria-label="Choose slide">
+        <button class="dot is-active" role="tab" aria-selected="true" aria-controls="slide-1" data-goto="0"><span class="sr-only">Slide 1</span></button>
+        <button class="dot" role="tab" aria-selected="false" aria-controls="slide-2" data-goto="1"><span class="sr-only">Slide 2</span></button>
+        <button class="dot" role="tab" aria-selected="false" aria-controls="slide-3" data-goto="2"><span class="sr-only">Slide 3</span></button>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Om klubben</h2>
+          <p>På <strong>Lions Fight Gym</strong>, bygger vi på det fundamentale: stance, guard, fotarbeid, timing, and ring IQ. Uansett som strapper opp for første gang eller om du prepper til kamp, Vi møter deg der du er og hever nivået ditt.</p>
+          <ul class="feature-list">
+            <li>Nybegynner venlig</li>
+            <li>Kondisjon og teknikk blandet</li>
+            <li>Små grupper for effektiv coaching</li>
+            <li>Sparring med tilsyn</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn--primary" href="#contact">Gratis prøveperiode</a>
+            <a class="btn btn--ghost" href="#memberships">Medlemskap</a>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- Classes -->
+    <section id="classes" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Timer</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Fundamentals</h3>
+            <p>Stance, guard, jab–cross, forsvar, bevegelse. Perfekt for nybegynnere.</p>
+            <span class="tag">Nybegynner</span>
+          </article>
+          <article class="card">
+            <h3>Tekniske Drills</h3>
+            <p>Fokus mitts, bag work, komboer, timing &amp; avstand — perfeksjoner håndtverket.</p>
+            <span class="tag">viderekommend</span>
+          </article>
+          <article class="card">
+            <h3>Conditioning</h3>
+            <p>Rundebasert trening med boksing. </p>
+            <span class="tag">Svett!</span>
+          </article>
+          <article class="card">
+            <h3>Sparring</h3>
+            <p>Kontrollerte runder med supervision fra coach. Tannbeskytter kreves..</p>
+            <span class="tag">Viderekommende+</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coaches -->
+    <section id="coaches" class="section">
+      <div class="container">
+        <h2 class="section-title">Coaches</h2>
+        <div class="cards coaches">
+          <article class="coach card">
+            <img src="" alt="" />
+            <div>
+              <h3>Head Coach — Zahoor</h3>
+              <p> Champ turned coach. Kjent for sin livsfarlige kryss og psykiske spill</p>
+            </div>
+          </article>
+          <article class="coach card">
+            <img src="" alt="" />
+            <div>
+              <h3>Coach — Mikeyy</h3>
+              <p>Footwork wizard.</p>
+            </div>
+          </article>
+          <article class="coach card">
+            <img src="" alt="" />
+            <div>
+              <h3>Kondisjonstrening — Ola nordmann</h3>
+              <p>Lorem ipsum </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Ukentlig timeplan</h2>
+        <div class="table-wrap">
+          <table class="schedule">
+            <thead>
+              <tr>
+                <th>Tid</th>
+                <th>Man</th>
+                <th>Tir</th>
+                <th>Ons</th>
+                <th>Tor</th>
+                <th>Fre</th>
+                <th>Lør</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>17:00</td>
+                <td>Fundamentals</td>
+                <td></td>
+                <td>Fundamentals</td>
+                <td></td>
+                <td>Teknikk Drills</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>18:00</td>
+                <td>Teknikk Drills</td>
+                <td>Conditioning</td>
+                <td></td>
+                <td>Tech Drills</td>
+                <td>Kondis</td>
+                <td>Fundamentals</td>
+              </tr>
+              <tr>
+                <td>19:00</td>
+                <td></td>
+                <td>Sparring *</td>
+                <td></td>
+                <td>Sparring *</td>
+                <td></td>
+                <td>Åpen matte</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="muted">* Sparring krever godkjenning av coach, Hodebeskyttelse &amp; tannbeskytter.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memberships -->
+    <section id="memberships" class="section">
+      <div class="container">
+        <h2 class="section-title">Medlemskap</h2>
+        <div class="cards pricing">
+          <article class="card">
+            <h3>Nybegynner</h3>
+            <p class="price">450 NOK<span>/måned</span></p>
+            <ul class="list">
+              <li>2 timer / ukentlig</li>
+              <li>åpen matte tilgang</li>
+              <li>Onboarding session</li>
+            </ul>
+            <a class="btn btn--primary" href="#contact">Choose Starter</a>
+          </article>
+          <article class="card highlight">
+            <span class="badge">Mest populær</span>
+            <h3>Ubegrenset</h3>
+            <p class="price">800 NOK<span>/måned</span></p>
+            <ul class="list">
+              <li>Alle timer</li>
+              <li>Åpen matte tilgang</li>
+              <li>Fremgangstilbakemelding av coach</li>
+            </ul>
+            <a class="btn btn--primary" href="#contact">Velg ubegrenset</a>
+          </article>
+          <article class="card">
+            <h3>Konkurranseteam</h3>
+            <p class="price">1000 NOK<span>/måned</span></p>
+            <ul class="list">
+              <li>Ubegrenset tilgang</li>
+              <li>Konkurranseteam timer</li>
+              <li>Event coaching</li>
+            </ul>
+            <a class="btn btn--primary" href="#contact">Bli med</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Visit &amp; Kontakt</h2>
+          <p>Vil du prøve en time eller har du spørsmål? Send oss en melding da vel! — Gleder oss til å høre fra deg</p>
+          <form class="contact-form" netlify>
+            <label>
+              <span>Navn</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span>Melding</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Send</button>
+            <p class="muted small">Ved å sende, samtykker du til å bli kontaktet angående timer og medlemskap.</p>
+          </form>
+        </div>
+       <div class="card map">
+        <div style="max-width:900px;">
+  <iframe
+    src="https://www.google.com/maps?q=Trondheimsveien%20436B%2C%200962%20Oslo&z=16&output=embed"
+    style="border:0;width:100%;aspect-ratio:16/9;border-radius:12px"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen
+    aria-label="Kart: Trondheimsveien 436B, 0962 Oslo">
+  </iframe>
+</div>
+
+<!-- Valgfritt: lenke som åpner adressen i Google Maps i ny fane -->
+<a href="https://www.google.com/maps/dir/?api=1&destination=Trondheimsveien+436B%2C+0962+Oslo"
+   target="_blank" rel="noopener">
+</a>
+          <div class="map-overlay">
+            <div>
+              <h3>Finn oss</h3>
+              <p>Crazy Ammerud — Åpent 07:00–22:00</p>
+            </div>
+            <a class="btn btn--ghost btn--sm" href="https://www.google.com/maps/dir/?api=1&destination=Trondheimsveien+436B%2C+0962+Oslo" aria-disabled="true">Åpne i Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Lions Fight Gym. All rights reserved.</p>
+      <div class="socials" aria-label="Social links">
+        <a href="#" aria-label="Instagram" class="social">
+          <!-- IG icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.51 5.51 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="social">
+          <!-- FB icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 9H16V6h-2.5C11.6 6 10 7.6 10 9.5V11H8v3h2v7h3v-7h2.1l.9-3H13v-1.5c0-.3.2-.5.5-.5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
